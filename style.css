@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  height: 200%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #4CAF50;
+}
+
+/* Page Content */
+.container {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  text-align: left;
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+input, textarea, button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Page Specific Backgrounds */
+.home {
+  background-image: url('images/home-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.about {
+  background-image: url('images/about-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.services {
+  background-image: url('images/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.portfolio {
+  background-image: url('images/portfolio-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.blog {
+  background-image: url('images/blog-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.contact {
+  background-image: url('images/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Ensure text is legible */
+.container h1, .container h2, .container p {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* NEW ADDITION: Make each section scrollable with background image */
+.home,
+.about,
+.services,
+.portfolio,
+.blog,
+.contact {
+  min-height: 120vh;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+/* Stronger navbar scroll effect */
+.navbar.scrolled {
+  background-color: #111;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* Improve readability for text blocks */
+.container h1,
+.container h2,
+.container p {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: 500;
+}
